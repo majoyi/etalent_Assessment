@@ -1,0 +1,10 @@
+{
+  "simulation": "bankloan.loanSimulation",
+  "simulationId": "loansimulation-20231023222746772",
+  "start": 1698100069952,
+  "description": "",
+  "scenarios": ["loanSimulation"],
+  "assertions": [
+
+  ]
+}

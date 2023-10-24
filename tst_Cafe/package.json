@@ -1,0 +1,11 @@
+{
+
+"scripts": {
+
+  "test":" testcafe chrome ./TestCafeSenario/test.js  --steps  --live"
+},
+
+  "devDependencies": {
+    "testcafe": "^3.3.0"
+  }
+}

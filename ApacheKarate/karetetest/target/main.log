@@ -1,0 +1,147 @@
+00:13:38.368 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:41.111 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 127
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"SCRUM_BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:41.305 response time in milliseconds: 183.53
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:41 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"5d12444a-c591-40b7-9ed7-197dbe44bc37","validationStatus":true,"errors":[],"warnings":[]}
+
+00:13:41.347 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:41.372 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 131
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"MINIONS_BANK"},"idNumber":9603225177080,"name":"Edwin_","surname":"Ndlalar"}
+
+00:13:41.434 response time in milliseconds: 59.99
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:41 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"014cd71e-176d-488c-9a30-8251575e3429","validationStatus":false,"errors":["Name must not have any special characters and digits"],"warnings":[]}
+
+00:13:41.476 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:41.489 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"MINIONS_BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:41.571 response time in milliseconds: 81.07
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:41 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"8f7c3b5f-aca6-4eac-a77d-4a685432802a","validationStatus":true,"errors":[],"warnings":[]}
+
+00:13:41.590 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:41.598 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 127
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"ICONIC_BANK"},"idNumber":960322517080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:41.920 response time in milliseconds: 320.50
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:41 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"3e2a5d3a-d193-4f4c-b74e-c83d6612b2b0","validationStatus":false,"errors":["ID Number must be a valid South African ID number (13 digits)"],"warnings":[]}
+
+00:13:43.653 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:43.662 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 127
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"SCRUM_BANK"},"idNumber":1007025304084,"name":"Edwin","surname":"Ndlala"}
+
+00:13:43.719 response time in milliseconds: 53.35
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:43 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"f948d1b4-e4fd-459c-b805-7f880b72e390","validationStatus":false,"errors":["The client must be 18 years or older"],"warnings":[]}
+
+00:13:43.749 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:43.757 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"MINIONS BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:44.809 response time in milliseconds: 1048.42
+1 < 400
+1 < Connection: close
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:44 GMT
+1 < Transfer-Encoding: chunked
+{"timestamp":"2023-10-23T22:13:44.786+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `za.co.loans.domain.Banks` from String \"MINIONS BANK\": value not one of declared Enum instance names: [ICONIC_BANK, SCRUM_BANK, MINIONS_BANK, MOLEWA_BANK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `za.co.loans.domain.Banks` from String \"MINIONS BANK\": value not one of declared Enum instance names: [ICONIC_BANK, SCRUM_BANK, MINIONS_BANK, MOLEWA_BANK]\n at [Source: (PushbackInputStream); line: 1, column: 55] (through reference chain: za.co.loans.domain.LoanRequest[\"bankAccount\"]->za.co.loans.domain.BankAccount[\"bankName\"])","path":"/loans"}
+
+00:13:44.829 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:44.838 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 128
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"MOLEWA_BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:44.907 response time in milliseconds: 67.90
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:44 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"c6ae9be2-aca7-418a-bd4e-bd592cbb9066","validationStatus":true,"errors":[],"warnings":["Refer to compliance"]}
+
+00:13:44.935 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:13:44.944 request:
+1 > POST http://localhost:8080/loans
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 130
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":11223344552,"bankName":"MINIONS_BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:45.223 response time in milliseconds: 277.93
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 23 Oct 2023 22:13:44 GMT
+1 < Transfer-Encoding: chunked
+{"reference":"d3641cd6-eab8-4a1c-91c2-a184d2ab08b0","validationStatus":false,"errors":["Bank account number must be 10 digits"],"warnings":[]}
+
+ings":[]}
+

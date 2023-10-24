@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>etalent.test.test</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">4</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2023-10-24 12:13:45 AM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:8]">[1:8] The client must be 18 years or older </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:15]">[2:15] A valid bank must be captured </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3:21]">[3:21] If Molewa bank is captured, then the following warning must be returned &ldquo;refer to compliance&rdquo; </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[4:28]">[4:28] The bank account number must be 10 digits </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">etalent/test/test.feature</span><span class="feature-description">POST Api</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:8]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">The client must be 18 years or older </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 66</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:8]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:8]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def baseUrl = 'http://localhost'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">00:13:43.653 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1:8]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def port = 8080</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given url baseUrl + ':' + port + '/loans'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And request {"bankAccount": { "accountNumber": 1122334455, "bankName": "SCRUM_BANK" },"idNumber": 1007025304084,"name": "Edwin","surname": "Ndlala"}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">60</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">00:13:43.662 request:
+1 &gt; POST http://localhost:8080/loans
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 127
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"SCRUM_BANK"},"idNumber":1007025304084,"name":"Edwin","surname":"Ndlala"}
+
+00:13:43.719 response time in milliseconds: 53.35
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 23 Oct 2023 22:13:43 GMT
+1 &lt; Transfer-Encoding: chunked
+{"reference":"f948d1b4-e4fd-459c-b805-7f880b72e390","validationStatus":false,"errors":["The client must be 18 years or older"],"warnings":[]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">And match $ contains {errors:["The client must be 18 years or older"]}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:15]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:15]</span><span class="scenario-name">A valid bank must be captured </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1058</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:15]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:15]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-cell passed">* def baseUrl = 'http://localhost'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="8">00:13:43.749 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[2:15]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-cell passed">* def port = 8080</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">Given url baseUrl + ':' + port + '/loans'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">And request {"bankAccount": { "accountNumber": 1122334455, "bankName": "MINIONS BANK" },"idNumber": 9603225177080,"name": "Edwin","surname": "Ndlala"}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1055</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">00:13:43.757 request:
+1 &gt; POST http://localhost:8080/loans
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 129
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"MINIONS BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:44.809 response time in milliseconds: 1048.42
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 23 Oct 2023 22:13:44 GMT
+1 &lt; Transfer-Encoding: chunked
+{"timestamp":"2023-10-23T22:13:44.786+0000","status":400,"error":"Bad Request","message":"JSON parse error: Cannot deserialize value of type `za.co.loans.domain.Banks` from String \"MINIONS BANK\": value not one of declared Enum instance names: [ICONIC_BANK, SCRUM_BANK, MINIONS_BANK, MOLEWA_BANK]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `za.co.loans.domain.Banks` from String \"MINIONS BANK\": value not one of declared Enum instance names: [ICONIC_BANK, SCRUM_BANK, MINIONS_BANK, MOLEWA_BANK]\n at [Source: (PushbackInputStream); line: 1, column: 55] (through reference chain: za.co.loans.domain.LoanRequest[\"bankAccount\"]-&gt;za.co.loans.domain.BankAccount[\"bankName\"])","path":"/loans"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">Then status 400</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3:21]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [3:21]</span><span class="scenario-name">If Molewa bank is captured, then the following warning must be returned &ldquo;refer to compliance&rdquo; </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 78</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3:21]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:21]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-cell passed">* def baseUrl = 'http://localhost'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">00:13:44.829 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[3:21]bg">
+                        <div class="step-container" id="15">
+                            <div class="step-ref bg-step">15</div>
+                            <div class="step-cell passed">* def port = 8080</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">Given url baseUrl + ':' + port + '/loans'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">And request {"bankAccount": { "accountNumber": 1122334455, "bankName": "MOLEWA_BANK" },"idNumber": 9603225177080,"name": "Edwin","surname": "Ndlala"}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">72</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">00:13:44.838 request:
+1 &gt; POST http://localhost:8080/loans
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 128
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":1122334455,"bankName":"MOLEWA_BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:44.907 response time in milliseconds: 67.90
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 23 Oct 2023 22:13:44 GMT
+1 &lt; Transfer-Encoding: chunked
+{"reference":"c6ae9be2-aca7-418a-bd4e-bd592cbb9066","validationStatus":true,"errors":[],"warnings":["Refer to compliance"]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">And match $ contains {warnings: ["Refer to compliance"]}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[4:28]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [4:28]</span><span class="scenario-name">The bank account number must be 10 digits </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 287</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[4:28]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[4:28]bg">
+                        <div class="step-container" id="21">
+                            <div class="step-ref bg-step">21</div>
+                            <div class="step-cell passed">* def baseUrl = 'http://localhost'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="21">00:13:44.935 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[4:28]bg">
+                        <div class="step-container" id="22">
+                            <div class="step-ref bg-step">22</div>
+                            <div class="step-cell passed">* def port = 8080</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">Given url baseUrl + ':' + port + '/loans'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">And request {"bankAccount": { "accountNumber": 11223344552, "bankName": "MINIONS_BANK" },"idNumber": 9603225177080,"name": "Edwin","surname": "Ndlala"}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">283</div>
+                    </div>
+                    <div class="preformatted" data-parent="25">00:13:44.944 request:
+1 &gt; POST http://localhost:8080/loans
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 130
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/9.0.4)
+{"bankAccount":{"accountNumber":11223344552,"bankName":"MINIONS_BANK"},"idNumber":9603225177080,"name":"Edwin","surname":"Ndlala"}
+
+00:13:45.223 response time in milliseconds: 277.93
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Mon, 23 Oct 2023 22:13:44 GMT
+1 &lt; Transfer-Encoding: chunked
+{"reference":"d3641cd6-eab8-4a1c-91c2-a184d2ab08b0","validationStatus":false,"errors":["Bank account number must be 10 digits"],"warnings":[]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
